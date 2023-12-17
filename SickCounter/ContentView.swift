@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var startTime = Date()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            NavigationLink("Go to sleep now") {
+                WakeTimesView()
+            }
+            .navigationTitle("WakeyTime")
         }
-        .padding()
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CB6EE3C2B2D623400BA257A /* WakeTimesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB6EE3B2B2D623400BA257A /* WakeTimesView.swift */; };
 		0CE10D702B2D5409009172AC /* SickCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10D6F2B2D5409009172AC /* SickCounterApp.swift */; };
 		0CE10D722B2D5409009172AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10D712B2D5409009172AC /* ContentView.swift */; };
 		0CE10D742B2D540A009172AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CE10D732B2D540A009172AC /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C2221112B2D8B94006F9525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0CB6EE3B2B2D623400BA257A /* WakeTimesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeTimesView.swift; sourceTree = "<group>"; };
 		0CE10D6C2B2D5409009172AC /* SickCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SickCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE10D6F2B2D5409009172AC /* SickCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SickCounterApp.swift; sourceTree = "<group>"; };
 		0CE10D712B2D5409009172AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,10 +97,12 @@
 		0CE10D6E2B2D5409009172AC /* SickCounter */ = {
 			isa = PBXGroup;
 			children = (
+				0C2221112B2D8B94006F9525 /* Info.plist */,
 				0CE10D6F2B2D5409009172AC /* SickCounterApp.swift */,
 				0CE10D712B2D5409009172AC /* ContentView.swift */,
 				0CE10D732B2D540A009172AC /* Assets.xcassets */,
 				0CE10D752B2D540A009172AC /* Preview Content */,
+				0CB6EE3B2B2D623400BA257A /* WakeTimesView.swift */,
 			);
 			path = SickCounter;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB6EE3C2B2D623400BA257A /* WakeTimesView.swift in Sources */,
 				0CE10D722B2D5409009172AC /* ContentView.swift in Sources */,
 				0CE10D702B2D5409009172AC /* SickCounterApp.swift in Sources */,
 			);
@@ -425,11 +431,14 @@
 				DEVELOPMENT_TEAM = AASCCTZFCG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SickCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +463,14 @@
 				DEVELOPMENT_TEAM = AASCCTZFCG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SickCounter/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
