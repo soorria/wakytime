@@ -11,7 +11,7 @@ struct WakeTimesView: View {
     private let sleepTime = Date()
     private let sleepCycleSeconds = 90 * 60
     private let hourInSeconds = 60 * 60
-    @State private var animateCircles = true
+    @State private var animateCircles = false
     @State private var glowAnimation = false
 
     typealias WakeTimeInfo = (wakeTime: String, sleepDuration: String, cycleCount: Int)
