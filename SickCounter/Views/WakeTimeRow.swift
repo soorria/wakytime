@@ -8,11 +8,31 @@
 import SwiftUI
 
 struct WakeTimeRow: View {
+    let wakeTimeInfo: WakeTimeInfo
+    @Binding var animateCircles: Bool
+    @Binding var glowAnimation: Bool
+    @ObservedObject var themeManager = ThemeManager.shared
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        HStack(spacing: 20) {
+            WakeTimeCircle(wakeTimeInfo: wakeTimeInfo, animateCircles: animateCircles, glowAnimation: glowAnimation)
 
-#Preview {
-    WakeTimeRow()
+            Text("\(wakeTimeInfo.wakeTime)")
+                .dynamicTypeSize(.xxxLarge)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            
+            Text("\(wakeTimeInfo.sleepDuration) hrs")
+                .dynamicTypeSize(.small)
+            
+            Button(action: {}) {
+                Image(systemName: "alarm.fill")
+                    .font(.system(size: 20))
+                    .foregroundColor(.red)
+            }
+        }
+        .padding()
+        .background(themeManager.base100)
+        .cornerRadius(10)
+        .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 2)
+    }
 }

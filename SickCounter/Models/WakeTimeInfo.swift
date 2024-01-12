@@ -7,12 +7,8 @@
 
 import SwiftUI
 
-struct WakeTimeInfo: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    WakeTimeInfo()
+struct WakeTimeInfo {
+    let wakeTime: String
+    let sleepDuration: String
+    let cycleCount: Int
 }

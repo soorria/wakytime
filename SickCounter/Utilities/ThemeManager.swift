@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct ThemeManager: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+class ThemeManager: ObservableObject {
+    static let shared = ThemeManager()
 
-#Preview {
-    ThemeManager()
+    var primary: Color { Color("Primary") }
+    var secondary: Color { Color("Secondary") }
+    var accent: Color { Color("Accent") }
+    var neutral: Color { Color("Neutral") }
+    var neutralContent: Color { Color("NeutralContent") }
+    var base100: Color { Color("Base-100") }
+    var base200: Color { Color("Base-200") }
+    var base300: Color { Color("Base-300") }
+    var baseContent: Color { Color("BaseContent") }
+    var info: Color { Color("Info") }
+    var success: Color { Color("Success") }
+    var warning: Color { Color("Warning") }
+    var error: Color { Color("Error") }
+
 }

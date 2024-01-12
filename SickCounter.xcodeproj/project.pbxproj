@@ -15,6 +15,11 @@
 		0CE10D812B2D540A009172AC /* SickCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10D802B2D540A009172AC /* SickCounterTests.swift */; };
 		0CE10D8B2B2D540A009172AC /* SickCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10D8A2B2D540A009172AC /* SickCounterUITests.swift */; };
 		0CE10D8D2B2D540A009172AC /* SickCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10D8C2B2D540A009172AC /* SickCounterUITestsLaunchTests.swift */; };
+		82D69DB32B32C848005BA22F /* WakeTimeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D69DB22B32C848005BA22F /* WakeTimeRow.swift */; };
+		82D69DB52B32C886005BA22F /* WakeTimeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D69DB42B32C886005BA22F /* WakeTimeCircle.swift */; };
+		82D69DB82B32C8E8005BA22F /* WakeTimeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D69DB72B32C8E8005BA22F /* WakeTimeInfo.swift */; };
+		82D69DBB2B32C9D0005BA22F /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D69DBA2B32C9D0005BA22F /* Color+Extensions.swift */; };
+		82D69DBD2B32D4F6005BA22F /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D69DBC2B32D4F6005BA22F /* ThemeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		0CE10D862B2D540A009172AC /* SickCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SickCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CE10D8A2B2D540A009172AC /* SickCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SickCounterUITests.swift; sourceTree = "<group>"; };
 		0CE10D8C2B2D540A009172AC /* SickCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SickCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82D69DB22B32C848005BA22F /* WakeTimeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeTimeRow.swift; sourceTree = "<group>"; };
+		82D69DB42B32C886005BA22F /* WakeTimeCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeTimeCircle.swift; sourceTree = "<group>"; };
+		82D69DB72B32C8E8005BA22F /* WakeTimeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeTimeInfo.swift; sourceTree = "<group>"; };
+		82D69DBA2B32C9D0005BA22F /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		82D69DBC2B32D4F6005BA22F /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,14 @@
 		0CE10D6E2B2D5409009172AC /* SickCounter */ = {
 			isa = PBXGroup;
 			children = (
+				82D69DB92B32C959005BA22F /* Utilities */,
+				82D69DB62B32C8CE005BA22F /* Models */,
+				82D69DB12B32C819005BA22F /* Views */,
 				0C2221112B2D8B94006F9525 /* Info.plist */,
 				0CE10D6F2B2D5409009172AC /* SickCounterApp.swift */,
 				0CE10D712B2D5409009172AC /* ContentView.swift */,
 				0CE10D732B2D540A009172AC /* Assets.xcassets */,
 				0CE10D752B2D540A009172AC /* Preview Content */,
-				0CB6EE3B2B2D623400BA257A /* WakeTimesView.swift */,
 			);
 			path = SickCounter;
 			sourceTree = "<group>";
@@ -130,6 +142,33 @@
 				0CE10D8C2B2D540A009172AC /* SickCounterUITestsLaunchTests.swift */,
 			);
 			path = SickCounterUITests;
+			sourceTree = "<group>";
+		};
+		82D69DB12B32C819005BA22F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CB6EE3B2B2D623400BA257A /* WakeTimesView.swift */,
+				82D69DB22B32C848005BA22F /* WakeTimeRow.swift */,
+				82D69DB42B32C886005BA22F /* WakeTimeCircle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82D69DB62B32C8CE005BA22F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82D69DB72B32C8E8005BA22F /* WakeTimeInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		82D69DB92B32C959005BA22F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				82D69DBA2B32C9D0005BA22F /* Color+Extensions.swift */,
+				82D69DBC2B32D4F6005BA22F /* ThemeManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CB6EE3C2B2D623400BA257A /* WakeTimesView.swift in Sources */,
+				82D69DB52B32C886005BA22F /* WakeTimeCircle.swift in Sources */,
+				82D69DB82B32C8E8005BA22F /* WakeTimeInfo.swift in Sources */,
+				82D69DBD2B32D4F6005BA22F /* ThemeManager.swift in Sources */,
 				0CE10D722B2D5409009172AC /* ContentView.swift in Sources */,
 				0CE10D702B2D5409009172AC /* SickCounterApp.swift in Sources */,
+				82D69DBB2B32C9D0005BA22F /* Color+Extensions.swift in Sources */,
+				82D69DB32B32C848005BA22F /* WakeTimeRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

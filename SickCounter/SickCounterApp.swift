@@ -12,6 +12,7 @@ struct SickCounterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ThemeManager.shared)
         }
     }
 }
